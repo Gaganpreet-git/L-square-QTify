@@ -1,0 +1,26 @@
+.hero {
+    width: 100vw;
+    height: 270px;
+    background-color: var(--color-black);
+    display: flex;
+    align-items: center;
+}
+
+.heroInner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 31px;
+    width: 799px;
+    height: 212px;
+    margin-left: 327px;
+}
+
+.heroText {
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 48px;
+    letter-spacing: 0px;
+    text-align: center;
+
+}
