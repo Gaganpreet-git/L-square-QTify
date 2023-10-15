@@ -1,0 +1,14 @@
+.section {
+    margin: 31px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+
+.toggleText {
+    color: var(--color-primary);
+    cursor: pointer;
+}

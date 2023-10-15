@@ -6,6 +6,7 @@ import newBollywoodImage from "./assets/new-bollywood.png";
 import Grid from "./components/Grid/Grid";
 import { useEffect, useState } from "react";
 import { fetchTopAlbums } from "./api/api";
+import Section from "./components/Section/Section";
 function App() {
   const [topAlbumsData, setTopAlbumsData] = useState([]);
 
@@ -24,7 +25,7 @@ function App() {
       <Navbar />
       <Hero />
       {/* <Card name={"New Bollywood"} followers={100} image={newBollywoodImage} /> */}
-      <Grid data={topAlbumsData} />
+      <Section data={topAlbumsData} title={"Top Albums"} />
     </div>
   );
 }

@@ -6,7 +6,7 @@ const Card = ({ name, image, followers }) => {
     <div className={styles.card}>
       <div className={styles.cardDetails}>
         <img src={image} alt={name} className={styles.cardImage} />
-        <span className={styles.cardFollowers}>{`${followers} followers`}</span>
+        <span className={styles.cardFollowers}>{`${followers} follows`}</span>
       </div>
       <div className={styles.cardName}>{name}</div>
     </div>
