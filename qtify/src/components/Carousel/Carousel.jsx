@@ -17,7 +17,7 @@ const Controls = ({ data }) => {
   return <></>;
 };
 
-const Carousel = ({ data }) => {
+const Carousel = ({ data, type }) => {
   return (
     <div className={styles.carousel}>
       <Swiper
@@ -34,8 +34,9 @@ const Carousel = ({ data }) => {
           return (
             <SwiperSlide key={item.id}>
               <Card
+                type={type}
                 image={item.image}
-                followers={item.follows}
+                followers={item.follows || item.likes}
                 name={item.title}
               />
             </SwiperSlide>

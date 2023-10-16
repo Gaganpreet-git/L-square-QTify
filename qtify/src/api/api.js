@@ -18,3 +18,15 @@ export const fetchNewAlbums = async () => {
     console.log(err);
   }
 };
+
+export const filterByGenre = async (genre) => {
+  // const res = await axios.get(`${BACKEND_ENDPOINT}/genres/${genre}`);
+  // console.log(`${BACKEND_ENDPOINT}/genres/${genre}`);
+  // return res.data;
+};
+
+export const fetchSongs = async () => {
+  const res = await axios.get(`${BACKEND_ENDPOINT}/songs`);
+  // console.log(`${BACKEND_ENDPOINT}/songs`);
+  return res.data;
+};
