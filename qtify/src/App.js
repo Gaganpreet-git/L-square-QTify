@@ -7,6 +7,8 @@ import Grid from "./components/Grid/Grid";
 import { useEffect, useState } from "react";
 import { fetchTopAlbums, fetchNewAlbums, fetchSongs } from "./api/api";
 import Section from "./components/Section/Section";
+import Accordian from "./components/Accordian/Accordian";
+import FAQ from "./components/FAQ/FAQ";
 function App() {
   const [topAlbumsData, setTopAlbumsData] = useState([]);
   const [newAlbumsData, setNewAlbumsData] = useState([]);
@@ -47,6 +49,7 @@ function App() {
         title={"Songs"}
         filter={["All", "Rock", "Pop", "Jazz", "Blues"]}
       />
+      <FAQ />{" "}
     </div>
   );
 }
