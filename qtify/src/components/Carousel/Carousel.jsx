@@ -31,9 +31,11 @@ const Carousel = ({ data, type }) => {
         <CarouselLeftNavigation />
         <CarouselRightNavigation />
         {data.map((item) => {
+          // console.log(item.songs.length);
           return (
             <SwiperSlide key={item.id}>
               <Card
+                songsLength={item.songs?.length > 0 ? item.songs.length : null}
                 type={type}
                 image={item.image}
                 followers={item.follows || item.likes}
